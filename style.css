@@ -3,3 +3,16 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+html, body {
+    height: 100vh;
+    display: grid;
+    place-content: center;
+}
+
+main {
+    min-height: 300px;
+    max-height: 80%;
+    min-width: 300px;
+    max-width: 50%;
+}
