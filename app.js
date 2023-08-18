@@ -13,9 +13,13 @@ function addNewReminder(input) {
 }
 
 function editReminder(e) {
+    //Receive user input to edit reminder text
     let newReminderText = prompt("Edit your text here");
+
+    //selects the paragraph element of the reminder list item
     let textToEdit = document.querySelector(`#${e.target.parentNode.id} p`);
 
+    //changes the reminder text to the user supplied text from the prompt
     textToEdit.innerText = newReminderText;
 }
 
@@ -36,7 +40,7 @@ function deleteReminder(e) {
     displayReminders(reminders);
 }
 
-//Is used to create reminders after user submits their input.
+//Is used to create reminder list items after user submits their input.
 function createReminder(input) {
     const li = document.createElement('li');
     const para = document.createElement('p');
