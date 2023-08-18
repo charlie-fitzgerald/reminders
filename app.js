@@ -12,12 +12,6 @@ function addNewReminder(input) {
     reminders.push(input.value);
 }
 
-
-//Will be used to delete or update reminders
-function getReminderId(e) {
-    console.log(e.target.parentNode.id);
-}
-
 function editReminder(e) {
     let newReminderText = prompt("Edit your text here");
     let textToEdit = document.querySelector(`#${e.target.parentNode.id} p`);
@@ -43,13 +37,13 @@ function deleteReminder(e) {
 }
 
 //Is used to create reminders after user submits their input.
-function createReminder(item) {
+function createReminder(input) {
     const li = document.createElement('li');
     const para = document.createElement('p');
     const editBtn = document.createElement('button');
     const delBtn = document.createElement('button');
 
-    para.innerText = item;
+    para.innerText = input;
     editBtn.innerText = "Edit reminder";
     delBtn.innerText = "Delete reminder";
 
