@@ -32,11 +32,12 @@ function deleteReminder(e) {
         reminders.slice(0, 1);
     }
 
+    //Uses item ID to delete specific item from the reminders array
     reminders.splice(item, 1);
 
     console.log(reminders);
 
-    //Re-renders the reminders list
+    //Re-renders the reminders list to the page
     displayReminders(reminders);
 }
 
