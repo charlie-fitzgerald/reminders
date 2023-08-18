@@ -69,7 +69,7 @@ function createReminder(input) {
     return li;
 }
 
-//Loops through the reminders array, adds a unique id to each reminder, and displays each item in a list
+//Loops through the reminders array, adds a unique id to each reminder, and displays each reminder in a list
 function displayReminders(arr) {
     reminderList.innerHTML = '';
 
