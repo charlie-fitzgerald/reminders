@@ -35,8 +35,6 @@ function deleteReminder(e) {
     //Uses item ID to delete specific item from the reminders array
     reminders.splice(item, 1);
 
-    console.log(reminders);
-
     //Re-renders the reminders list to the page
     displayReminders(reminders);
 }
@@ -51,6 +49,10 @@ function createReminder(input) {
     para.innerText = input;
     editBtn.innerText = "Edit reminder";
     delBtn.innerText = "Delete reminder";
+
+    li.classList.add("list-group-item");
+    editBtn.classList.add("btn", "btn-secondary", "btn-sm");
+    delBtn.classList.add("btn", "btn-secondary", "btn-sm")
 
     li.append(para, editBtn, delBtn);
 

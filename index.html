@@ -1,21 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
     <title>Reminders</title>
-</head>
-<body>
+  </head>
+  <body>
     <main>
-        <div class="input-wrapper">
-            <input type="text" id="reminder-input" placeholder="Add new reminder"><button id="reminder-submit-btn">Enter</button>
-        </div>
+      <div class="input-wrapper">
+        <input
+          type="text"
+          id="reminder-input"
+          placeholder="Add new reminder"
+        /><button id="reminder-submit-btn" class="btn btn-primary btn-sm">
+          Enter
+        </button>
+      </div>
 
-        <ul id="reminder-list">
-        </ul>
+      <ul id="reminder-list" class="list-group"></ul>
     </main>
 
     <script src="app.js"></script>
-</body>
+  </body>
 </html>
